@@ -1,11 +1,36 @@
 @import 'materialize';
 body {
-	background-color: #fff;    
+    background-color: #fff;
+    font-size: 16px;
+}
+.main-titlte {
+	font-family: 'Source Sans Pro', sans-serif;
+	font-weight: 600;
+	font-size: 2rem;
+	margin: 15px 25px 0;
 }
 .card-image--english {
-	width: 100%;
+    width: 100%;
 }
+
 .button-collapse--menu,
 .brand-logo--menu {
-	margin-left: 20px,
+    margin-left: 20px,
+}
+
+.brand-logo--menu {
+    font-weight: 900;
+}
+
+.card {
+	padding-left: 0;
+	padding-right: 0;
+    .card-content {
+        .card-title--main {
+            font-weight: 600;
+        }
+        .definition{
+			padding: 10px;
+        }
+    }
 }

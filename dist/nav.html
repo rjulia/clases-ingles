@@ -1,26 +1,6 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="englishClass">
-
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <!--Import materialize.css-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
-    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-    <script type="text/javascript" src="../node_modules/angular/angular.js"></script>
-    <script type="text/javascript" src="js/materialize.min.js"></script>
-    <script type="text/javascript" src="js/ingles.js"></script>
-    <script type="text/javascript" src="js/angular.js"></script>
-</head>
-
-<body class="container">
-    <nav class=" cyan darken-4">
+<nav class=" cyan darken-4">
         <div class="nav-wrapper">
-            <a href="#" data-activates="slide-out" class="button-collapse button-collapse--menu"><i class="material-icons">menu</i></a>
+            <a href="#" data-activates="nav-mobile" data-sidenav="left" data-menuwidth="500" data-closeonclick="false" class="button-collapse button-collapse--menu"><i class="material-icons">menu</i></a>
             <a href="#!" class="brand-logo brand-logo--menu cyan-text text-lighten-4">Class English</a>
             <ul id="dropdown1a" class="dropdown-content">
                 <li><a href="#!">one</a></li>
@@ -91,39 +71,3 @@
             </ul>
         </div>
     </nav>
-    <div class="row" ng-controller="vocabularyController">
-        <h1 class="main-titlte cyan-text text-darken-4" ng-bind="vocabulary | uppercase "></h1>
-        <div class="col s12 m12 ">
-            <ul class="">
-                <li class="col s12 m6" ng-repeat="card in cardsVocabulary | orderBy: 'title'">
-                    <div class="card cyan row">
-                        <div class="card-content white-text">
-                            <span class="card-title card-title--main">{{card.title}}</span>
-                            <div class="definition white">
-                                <p class="cyan-text text-darken-4">{{card.description}}</p>
-                            </div>
-                        </div>
-                        <div class="card-action col s12 m6 l6 center-align">
-                            <ul id="synonyns{{$index}}" class="dropdown-content">
-                                <li><a href="#!" class="cyan-text text-darken-2">{{card.synonyns.one}}</a></li>
-                                <li><a href="#!" class="cyan-text text-darken-2">{{card.synonyns.two}}</a></li>
-                                <li><a href="#!" class="cyan-text text-darken-2">{{card.synonyns.three}}</a></li>
-                            </ul>
-                            <a class="btn dropdown-button cyan darken-2" href="#!" data-activates="synonyns{{$index}}">Synonyns<i class="mdi-navigation-arrow-drop-down right"></i></a>
-                        </div>
-                        <div class="card-action col s12 m6 l6 center-align">
-                            <ul id="antonyms{{$index}}" class="dropdown-content">
-                                <li><a href="#!" class="cyan-text text-darken-2">{{card.antonyms.one}}</a></li>
-                                <li><a href="#!" class="cyan-text text-darken-2">{{card.antonyms.two}}</a></li>
-                                <li><a href="#!" class="cyan-text text-darken-2">{{card.antonyms.three}}</a></li>
-                            </ul>
-                            <a class="btn dropdown-button cyan darken-3" href="#!" data-activates="antonyms{{$index}}">Antonyms<i class="mdi-navigation-arrow-drop-down right"></i></a>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
-</body>
-
-</html>
