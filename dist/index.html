@@ -14,11 +14,34 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/ingles.js"></script>
+    <script type="text/javascript" src="js/angular.js"></script>
 </head>
 
 <body class="container">
-    <nav>
+    <nav class="cyan accent-4">
         <div class="nav-wrapper">
+            <a href="#" data-activates="slide-out" class="button-collapse button-collapse--menu"><i class="material-icons">menu</i></a>
+            <a href="#!" class="brand-logo brand-logo--menu">Class English</a>
+            <ul id="dropdown1a" class="dropdown-content">
+                <li><a href="#!">one</a></li>
+                <li><a href="#!">two</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">three</a></li>
+            </ul>
+            <ul id="dropdown1b" class="dropdown-content">
+                <li><a href="#!">one</a></li>
+                <li><a href="#!">two</a></li>
+                <li class="divider"></li>
+                <li><a href="#!">three</a></li>
+            </ul>
+
+            <ul class="right hide-on-med-and-down">
+                <li><a href="sass.html">Information</a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1a">Theory<i class="material-icons right">arrow_drop_down</i></a></li>
+                <!-- Dropdown Trigger -->
+                <li><a class="dropdown-button" href="#!" data-activates="dropdown1b">vocabulary<i class="material-icons right">arrow_drop_down</i></a></li>
+            </ul>
             <ul id="slide-out" class="side-nav">
                 <li>
                     <div class="userView">
@@ -28,35 +51,73 @@
                         <a href="#!email"><span class="z-depth-4 white-text email">reimon1972@gmail.com</span></a>
                     </div>
                 </li>
-                <li><a href="#!"><i class="material-icons">info</i>What about the App?</a></li>
+                <li><a href="#!"><i class="material-icons">info</i>Information</a></li>
                 <li>
                     <div class="divider"></div>
                 </li>
-                <li><a href="#!">Future</a></li>
-                <li><a class="waves-effect" href="#!">Abjectives</a></li>
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Theory<i class="material-icons">arrow_drop_down</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#!">First</a></li>
+                                    <li><a href="#!">Second</a></li>
+                                    <li><a href="#!">Third</a></li>
+                                    <li><a href="#!">Fourth</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="divider"></div>
+                </li>
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Vovabulary<i class="material-icons">arrow_drop_down</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#!">First</a></li>
+                                    <li><a href="#!">Second</a></li>
+                                    <li><a href="#!">Third</a></li>
+                                    <li><a href="#!">Fourth</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
             </ul>
-            <a href="#" data-activates="slide-out" class="button-collapse"><i class="material-icons">menu</i></a>
         </div>
     </nav>
-    
     <div class="row">
         <div class="col s12 m6">
             <div class="card light-blue darken-2">
                 <div class="card-content white-text">
-                    <span class="card-title">Card Title</span>
-                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                    <span class="card-title">Selfish</span>
+                    <p>Selfish people think about themselves and not about other people</p>
                 </div>
-                <div class="card-action">
-                    <ul id="dropdown2" class="dropdown-content">
-                        <li><a href="#!">one<span class="badge">1</span></a></li>
-                        <li><a href="#!">two<span class="new badge">1</span></a></li>
-                        <li><a href="#!">three</a></li>
-                    </ul>
-                    <a class="btn dropdown-button blue darken-4" href="#!" data-activates="dropdown2">Other words<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                <div class="row">
+                    <div class="card-action col s12 m6 l6">
+                        <ul id="dropdown2" class="dropdown-content">
+                            <li><a href="#!">egotistical</a></li>
+                            <li><a href="#!">greedy</a></li>
+                            <li><a href="#!">narcissistic</a></li>
+                        </ul>
+                        <a class="btn dropdown-button blue darken-4" href="#!" data-activates="dropdown2">Synonyns<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                    </div>
+                    <div class="card-action col s12 m6 l6">
+                        <ul id="dropdown3" class="dropdown-content">
+                            <li><a href="#!">benevolent</a></li>
+                            <li><a href="#!">unselfish</a></li>
+                            <li><a href="#!">caring</a></li>
+                        </ul>
+                        <a class="btn dropdown-button blue darken-4" href="#!" data-activates="dropdown3">Antonyms<i class="mdi-navigation-arrow-drop-down right"></i></a>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
-
 </html>
