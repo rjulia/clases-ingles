@@ -19,7 +19,7 @@
 </head>
 
 <body class="container">
-    <nav class=" cyan darken-4">
+    <nav class="cyan darken-3">
         <div class="nav-wrapper">
             <a href="#" data-activates="slide-out" class="button-collapse button-collapse--menu"><i class="material-icons">menu</i></a>
             <a href="#!" class="brand-logo brand-logo--menu cyan-text text-lighten-4">Class English</a>
@@ -96,27 +96,29 @@
         <div class="col s12 m12 ">
             <ul class="content-cards--main row">
                 <li class="col s12 m6 l4" ng-repeat="card in cardsVocabulary | orderBy: 'title'">
-                    <div class="card cyan">
+                    <div class="card cyan lighten-1">
                         <div class="card-image">
                           <img ng-src="{{card.source}}">
-                          <span class="card-title">{{card.title}}</span>
+                          <div class="card-title card-title--main">
+                              <span class="white-text">{{card.title}}</span>
+                          </div>
                         </div>
                         <div class="card-content white-text no-p-top">
-                            <span class="card-title card-title--main">{{card.title}}</span>
-                            <div class="definition white">
-                                <p class="cyan-text text-darken-4">{{card.description}}</p>
+                            <!-- <span class="card-title card-title--main cyan-text text-darken-4">{{card.title}}</span> -->
+                            <div class="definition cyan darken-2 z-depth-1">
+                                <p class="white-text ">{{card.description}}</p>
                             </div>
                         </div>
                         <div class="card-action no-p-top ">
                             <h6 class="white-text">Synonyns</h6>
                             <ul >
-                                <li ng-repeat="syn in card.synonyns" class="chip  purple darken-3 white-text ">{{syn | uppercase }}</li>
+                                <li ng-repeat="syn in card.synonyns" class="chip cyan darken-2 white-text ">{{syn | uppercase }}</li>
                             </ul>
                         </div>
                         <div class="card-action no-p-top ">
                             <h6 class="white-text">Antonyms</h6>
                             <ul >
-                                <li  ng-repeat="ant in card.antonyms" class="chip purple darken-3 white-text ">{{ant | uppercase }}</li>
+                                <li  ng-repeat="ant in card.antonyms" class="chip cyan darken-2 white-text ">{{ant | uppercase }}</li>
                             </ul>
                         </div>
                     </div>

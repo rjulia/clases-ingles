@@ -40,14 +40,24 @@ h4 {
     padding-right: 0;
 }
 .card {
+    .card-image {
+        .card-title{
+            padding: 5px 21px;
+        } 
+    }
+    .card-title--main {
+        font-size: 2.3rem;
+        letter-spacing: 1.1px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 600;
+        width: 100%;
+        background-color: rgba(0,0,0,0.4);
+    }
     .card-content {
         &.no-p-top {
             padding-top: 5px;
             padding-bottom: 8px;
-        }
-        .card-title--main {
-            font-family: 'Source Sans Pro', sans-serif;
-            font-weight: 600;
+
         }
         .definition{ 
 			padding: 10px;
@@ -57,9 +67,15 @@ h4 {
         &.no-p-top {
             padding-top: 5px;
             padding-bottom: 8px;
+            
         }
         li {
             display: inline-block;
+        }
+    }
+    &:first-child {
+        .card-content {
+        padding-top: 21px;
         }
     }
 }

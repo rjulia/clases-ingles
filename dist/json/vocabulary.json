@@ -155,6 +155,111 @@
         "antonyms": {
             "one": "Modest"
         }
+    }, {
+        "title": "Affectionate",
+        "source": "images/affectionate.jpg",
+        "description": "An affectionate person shows that they love or like people very much.",
+        "synonyns": {
+            "one": "caring",
+            "two": "Friendly",
+            "three": "Loving"
+
+        },
+        "antonyms": {
+            "one": "aloof",
+            "two": "Cold",
+            "three": "uncaring"
+        }
+    }, {
+        "title": "Jealous",
+        "source": "images/jealous.jpg",
+        "description": "A jealous person thinks that someone loves another person more than them, or wants what other poeple have.",
+        "synonyns": {
+            "one": "anxious",
+            "two": "envious",
+            "three": "possessive"
+
+        },
+        "antonyms": {
+            "one": "calm",
+            "two": "undoubting",
+            "three": "unworried"
+        }
+    }, {
+        "title": "Sensitive",
+        "source": "images/sensitive.jpg",
+        "description": "A sensitive person can be easily hurt or offended.",
+        "synonyns": {
+            "one": "conscious",
+            "two": "delicate",
+            "three": "emotional"
+
+        },
+        "antonyms": {
+            "one": "calm",
+            "two": "ignorant",
+            "three": "insensitive"
+        }
+    }, {
+        "title": "Ambitious",
+        "source": "images/ambitious.jpg",
+        "description": "An ambitious person wants to be succesful in life.",
+        "synonyns": {
+            "one": "determined",
+            "two": "earnest",
+            "three": "energetic"
+
+        },
+        "antonyms": {
+            "one": "lethargic",
+            "two": "unambitious",
+            "three": "unesthusiastic"
+        }
+    }, {
+        "title": "Reliable",
+        "source": "images/reliable.jpg",
+        "description": "A reliable person is someone who you can trust or depend on.",
+        "synonyns": {
+            "one": "decent",
+            "two": "honest",
+            "three": "respectable"
+
+        },
+        "antonyms": {
+            "one": "bad",
+            "two": "broken",
+            "three": "corrupt"
+        }
+    }, {
+        "title": "Rebellious",
+        "source": "images/rebellious.jpg",
+        "description": "A rebellious person doesn't like obeying rules.",
+        "synonyns": {
+            "one": "alienated",
+            "two": "disaffected",
+            "three": "bellicose"
+
+        },
+        "antonyms": {
+            "one": "happy",
+            "two": "obedient",
+            "three": "compliant"
+        }
+    }, {
+        "title": "Stubborn",
+        "source": "images/stubborn.jpg",
+        "description": "A stubbiorn person never changes his(or her) opinion or attitude about something.",
+        "synonyns": {
+            "one": "determined",
+            "two": "headstrong",
+            "three": "inflexible"
+
+        },
+        "antonyms": {
+            "one": "flexible",
+            "two": "irresolute",
+            "three": "kind"
+        }
     }
 
 ]
