@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="css/styles.css">
     <!--Import materialize.css-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Let browser know website is optimized for mobile-->
@@ -13,8 +12,10 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="../node_modules/angular/angular.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.1/angular-materialize.min.js"></script>
     <script type="text/javascript" src="js/ingles.js"></script>
     <script type="text/javascript" src="js/angular.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body class="container">
@@ -27,7 +28,6 @@
                 <li><a href="#!">two</a></li>
                 <li class="divider"></li>
                 <li><a href="#!">three</a></li>
-
             </ul>
             <ul id="dropdown1b" class="dropdown-content">
                 <li><a href="#!">one</a></li>
@@ -94,30 +94,30 @@
     <div class="row" ng-controller="vocabularyController">
         <h1 class="main-titlte cyan-text text-darken-4" ng-bind="vocabulary | uppercase "></h1>
         <div class="col s12 m12 ">
-            <ul class="">
-                <li class="col s12 m6" ng-repeat="card in cardsVocabulary | orderBy: 'title'">
-                    <div class="card cyan row">
-                        <div class="card-content white-text">
+            <ul class="content-cards--main row">
+                <li class="col s12 m6 l4" ng-repeat="card in cardsVocabulary | orderBy: 'title'">
+                    <div class="card cyan">
+                        <div class="card-image">
+                          <img ng-src="{{card.source}}">
+                          <span class="card-title">{{card.title}}</span>
+                        </div>
+                        <div class="card-content white-text no-p-top">
                             <span class="card-title card-title--main">{{card.title}}</span>
                             <div class="definition white">
                                 <p class="cyan-text text-darken-4">{{card.description}}</p>
                             </div>
                         </div>
-                        <div class="card-action col s12 m6 l6 center-align">
-                            <ul id="synonyns{{$index}}" class="dropdown-content">
-                                <li><a href="#!" class="cyan-text text-darken-2">{{card.synonyns.one}}</a></li>
-                                <li><a href="#!" class="cyan-text text-darken-2">{{card.synonyns.two}}</a></li>
-                                <li><a href="#!" class="cyan-text text-darken-2">{{card.synonyns.three}}</a></li>
+                        <div class="card-action no-p-top ">
+                            <h6 class="white-text">Synonyns</h6>
+                            <ul >
+                                <li ng-repeat="syn in card.synonyns" class="chip  purple darken-3 white-text ">{{syn | uppercase }}</li>
                             </ul>
-                            <a class="btn dropdown-button cyan darken-2" href="#!" data-activates="synonyns{{$index}}">Synonyns<i class="mdi-navigation-arrow-drop-down right"></i></a>
                         </div>
-                        <div class="card-action col s12 m6 l6 center-align">
-                            <ul id="antonyms{{$index}}" class="dropdown-content">
-                                <li><a href="#!" class="cyan-text text-darken-2">{{card.antonyms.one}}</a></li>
-                                <li><a href="#!" class="cyan-text text-darken-2">{{card.antonyms.two}}</a></li>
-                                <li><a href="#!" class="cyan-text text-darken-2">{{card.antonyms.three}}</a></li>
+                        <div class="card-action no-p-top ">
+                            <h6 class="white-text">Antonyms</h6>
+                            <ul >
+                                <li  ng-repeat="ant in card.antonyms" class="chip purple darken-3 white-text ">{{ant | uppercase }}</li>
                             </ul>
-                            <a class="btn dropdown-button cyan darken-3" href="#!" data-activates="antonyms{{$index}}">Antonyms<i class="mdi-navigation-arrow-drop-down right"></i></a>
                         </div>
                     </div>
                 </li>

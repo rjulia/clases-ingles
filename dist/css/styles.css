@@ -6396,9 +6396,20 @@ body {
 
 .main-titlte {
   font-family: 'Source Sans Pro', sans-serif;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 2rem;
   margin: 15px 25px 0; }
+
+.content-cards--main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
 
 .card-image--english {
   width: 100%; }
@@ -6410,10 +6421,27 @@ body {
 .brand-logo--menu {
   font-weight: 900; }
 
+h4 {
+  margin-top: 0; }
+
 .card {
   padding-left: 0;
   padding-right: 0; }
-  .card .card-content .card-title--main {
-    font-weight: 600; }
-  .card .card-content .definition {
-    padding: 10px; }
+
+.card .card-content.no-p-top {
+  padding-top: 5px;
+  padding-bottom: 8px; }
+
+.card .card-content .card-title--main {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600; }
+
+.card .card-content .definition {
+  padding: 10px; }
+
+.card .card-action.no-p-top {
+  padding-top: 5px;
+  padding-bottom: 8px; }
+
+.card .card-action li {
+  display: inline-block; }

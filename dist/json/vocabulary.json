@@ -1,17 +1,160 @@
 [{
-    "title": "Selfish",
-    "description": "Selfish people think about themselves and not about other people",
-    "Synonyns": {
-        "first": "egotistical",
-        "second": "greedy",
-        "third": "narcissistic"
+        "title": "Selfish",
+        "source": "images/selfish.jpg",
+        "description": "Selfish people think about themselves and not about other people.",
+        "synonyns": {
+            "one": "egotistical",
+            "two": "greedy",
+            "three": "narcissistic"
 
-    },
+        },
+        "antonyms": {
+            "one": "benevolent",
+            "two": "unselfish",
+            "three": "caring"
 
-    "Antonyms": {
-        "first": "benevolent",
-        "second": "unselfish",
-        "third": "caring"
+        }
+    }, {
+        "title": "Spoilt",
+        "source": "images/spoilt.jpg",
+        "description": "Spoilt children behave badly because they are given everything they want.",
+        "synonyns": {
+            "one": "accommodate",
+            "two": "coddle",
+            "three": "cosset"
 
+        },
+        "antonyms": {
+            "one": "be mean",
+            "two": "hinder",
+            "three": "hurt"
+
+        }
+    }, {
+        "title": "Aggressive",
+        "source": "images/aggresive.jpg",
+        "description": "An aggressive person gets angry quickly and likes fighting and arguing.",
+        "synonyns": {
+            "one": "combative",
+            "two": "destructive",
+            "three": "intrusive"
+
+        },
+        "antonyms": {
+            "one": "clam",
+            "two": "complasiant",
+            "three": "easy-going"
+
+        }
+    }, {
+        "title": "Charming",
+        "source": "images/charming.jpg",
+        "description": "Charming people have an attrractive personality and make people like them.",
+        "synonyns": {
+            "one": "attractive",
+            "two": "amiable",
+            "three": "cute"
+
+        },
+        "antonyms": {
+            "one": "bad",
+            "two": "boring",
+            "three": "disagreeable"
+
+        }
+    }, {
+        "title": "Sensible",
+        "source": "images/sensible.png",
+        "description": "A sensible person has common sense and is practical.",
+        "synonyns": {
+            "one": "astute",
+            "two": "down-to-earth",
+            "three": "intelligent"
+
+        },
+        "antonyms": {
+            "one": "excited",
+            "two": "foolish",
+            "three": "idiotic"
+
+        }
+    }, {
+        "title": "Sociable",
+        "source": "images/sociable.jpg",
+        "description": "A sociable percson is friendly and enjoys beging with other people.",
+        "synonyns": {
+            "one": "affeble",
+            "two": "cordial",
+            "three": "neighborly"
+
+        },
+        "antonyms": {
+            "one": "aloof",
+            "two": "cold",
+            "three": "unsociable"
+
+        }
+    }, {
+        "title": "Anxious",
+        "source": "images/anxious.jpg",
+        "description": "Anxious people are often worried or stressed.",
+        "synonyns": {
+            "one": "affeble",
+            "two": "cordial",
+            "three": "neighborly"
+
+        },
+        "antonyms": {
+            "one": "aloof",
+            "two": "cold",
+            "three": "unsociable"
+
+        }
+    }, {
+        "title": "Moody",
+        "source": "images/moody.jpg",
+        "description": "A moody person is happy one minute and sad the next, and is often bad-tempered.",
+        "synonyns": {
+            "one": "Crabby",
+            "two": "temperamental",
+            "three": "cross"
+
+        },
+        "antonyms": {
+            "one": "cheerfull",
+            "two": "happy",
+            "three": "balanced"
+
+        }
+    }, {
+        "title": "Independent",
+        "source": "images/independent.jpg",
+        "description": "Independent poeple like doing things on thier own , without help.",
+        "synonyns": {
+            "one": "autonomous",
+            "two": "nonpartisan",
+            "three": "self-reliant"
+
+        },
+        "antonyms": {
+            "one": "Dependent",
+            "two": "Subordinate",
+            "three": "Subservient"
+
+        }
+    }, {
+        "title": "Bossy",
+        "source": "images/bossy.jpg",
+        "description": "A bossy person likes giving orders to other people.",
+        "synonyns": {
+            "one": "imperious",
+            "two": "overbearing",
+            "three": "pushy"
+
+        },
+        "antonyms": {
+            "one": "Modest"
+        }
     }
-}]
+
+]
