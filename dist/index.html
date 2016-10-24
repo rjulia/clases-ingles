@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script type="text/javascript" src="../node_modules/angular/angular.js"></script>
+    <script type="text/javascript" src="../node_modules/angular-route/angular-route.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-materialize/0.2.1/angular-materialize.min.js"></script>
     <script type="text/javascript" src="js/ingles.js"></script>
@@ -24,23 +25,21 @@
             <a href="#" data-activates="slide-out" class="button-collapse button-collapse--menu"><i class="material-icons">menu</i></a>
             <a href="#!" class="brand-logo brand-logo--menu cyan-text text-lighten-4">Class English</a>
             <ul id="dropdown1a" class="dropdown-content">
-                <li><a href="#!">one</a></li>
-                <li><a href="#!">two</a></li>
+                <li><a href="#indextheory">Theory Introduction</a></li>
                 <li class="divider"></li>
-                <li><a href="#!">three</a></li>
             </ul>
             <ul id="dropdown1b" class="dropdown-content">
-                <li><a href="#!">one</a></li>
-                <li><a href="#!">two</a></li>
+                <li><a href="#indexvocabulary">Vovabulary Introduction</a></li>
                 <li class="divider"></li>
-                <li><a href="#!">three</a></li>
+                <li><a href="#vocabularyone">Vovabulary One</a></li>
+                <li class="divider"></li>
             </ul>
-            <ul class="right hide-on-med-and-down">
-                <li><a href="sass.html">Information</a></li>
+            <ul id="mainMenu" class="right hide-on-med-and-down" ng-controller="menuController">
+                <li><a ng-class="{ active: isActive('/info')}" href="#info">Information</a></li>
                 <!-- Dropdown Trigger -->
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1a">Theory<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a ng-class="{ active: isActive('/indextheory')}" href="#indextheory" class="dropdown-button" href="" data-activates="dropdown1a">Theory<i class="material-icons right">arrow_drop_down</i></a></li>
                 <!-- Dropdown Trigger -->
-                <li><a class="dropdown-button" href="#!" data-activates="dropdown1b">vocabulary<i class="material-icons right">arrow_drop_down</i></a></li>
+                <li><a ng-class="{ active: isActive('/indexvocabulary')}" href="#indexvocabulary" class="dropdown-button" href="" data-activates="dropdown1b">vocabulary<i class="material-icons right">arrow_drop_down</i></a></li>
             </ul>
             <ul id="slide-out" class="side-nav">
                 <li>
@@ -61,10 +60,7 @@
                             <a class="collapsible-header">Theory<i class="material-icons">arrow_drop_down</i></a>
                             <div class="collapsible-body">
                                 <ul>
-                                    <li><a href="#!">First</a></li>
-                                    <li><a href="#!">Second</a></li>
-                                    <li><a href="#!">Third</a></li>
-                                    <li><a href="#!">Fourth</a></li>
+                                    <li><a href="#indextheory">Theory Introduction</a></li>
                                 </ul>
                             </div>
                         </li>
@@ -79,10 +75,9 @@
                             <a class="collapsible-header">Vovabulary<i class="material-icons">arrow_drop_down</i></a>
                             <div class="collapsible-body">
                                 <ul>
-                                    <li><a href="#!">First</a></li>
-                                    <li><a href="#!">Second</a></li>
-                                    <li><a href="#!">Third</a></li>
-                                    <li><a href="#!">Fourth</a></li>
+                                    <li><a href="#indexvocabulary">Vovabulary Introduction</a></li>
+                                    <li><a href="#vocabularyone">Vovabulary One</a></li>
+
                                 </ul>
                             </div>
                         </li>
@@ -91,41 +86,7 @@
             </ul>
         </div>
     </nav>
-    <div class="row" ng-controller="vocabularyController">
-        <h1 class="main-titlte cyan-text text-darken-4" ng-bind="vocabulary | uppercase "></h1>
-        <div class="col s12 m12 ">
-            <ul class="content-cards--main row">
-                <li class="col s12 m6 l4" ng-repeat="card in cardsVocabulary | orderBy: 'title'">
-                    <div class="card cyan lighten-1">
-                        <div class="card-image">
-                          <img ng-src="{{card.source}}">
-                          <div class="card-title card-title--main">
-                              <span class="white-text">{{card.title}}</span>
-                          </div>
-                        </div>
-                        <div class="card-content white-text no-p-top">
-                            <!-- <span class="card-title card-title--main cyan-text text-darken-4">{{card.title}}</span> -->
-                            <div class="definition cyan darken-2 z-depth-1">
-                                <p class="white-text ">{{card.description}}</p>
-                            </div>
-                        </div>
-                        <div class="card-action no-p-top ">
-                            <h6 class="white-text">Synonyns</h6>
-                            <ul >
-                                <li ng-repeat="syn in card.synonyns" class="chip cyan darken-2 white-text ">{{syn | uppercase }}</li>
-                            </ul>
-                        </div>
-                        <div class="card-action no-p-top ">
-                            <h6 class="white-text">Antonyms</h6>
-                            <ul >
-                                <li  ng-repeat="ant in card.antonyms" class="chip cyan darken-2 white-text ">{{ant | uppercase }}</li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </div>
+    <div ng-view></div>
 </body>
 
 </html>

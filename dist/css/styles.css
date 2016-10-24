@@ -6394,6 +6394,9 @@ body {
   background-color: #fff;
   font-size: 16px; }
 
+#mainMenu li a.active {
+  background-color: #00acc1; }
+
 .main-titlte {
   font-family: 'Source Sans Pro', sans-serif;
   font-weight: 900;
@@ -6427,6 +6430,10 @@ h4 {
 .card {
   padding-left: 0;
   padding-right: 0; }
+
+.card .words a {
+  margin-right: 15px;
+  margin-bottom: 15px; }
 
 .card .card-image .card-title {
   padding: 5px 21px; }

@@ -3,23 +3,34 @@ body {
     background-color: #fff;
     font-size: 16px;
 }
-.main-titlte {
-	font-family: 'Source Sans Pro', sans-serif;
-	font-weight: 900;
-	font-size: 2rem;
-	margin: 15px 25px 0;
+
+#mainMenu {
+    li {
+        a.active {
+            background-color: #00acc1;
+        }
+    }
 }
-.content-cards--main{
+
+.main-titlte {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 900;
+    font-size: 2rem;
+    margin: 15px 25px 0;
+}
+
+.content-cards--main {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;     
-    -ms-flex-wrap: wrap;     
-        flex-wrap: wrap;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
 }
+
 .card-image--english {
     width: 100%;
 }
@@ -32,18 +43,25 @@ body {
 .brand-logo--menu {
     font-weight: 900;
 }
+
 h4 {
     margin-top: 0;
 }
+
 .card {
     padding-left: 0;
     padding-right: 0;
 }
+
 .card {
+    .words a {
+        margin-right: 15px;
+        margin-bottom: 15px;
+    }
     .card-image {
-        .card-title{
+        .card-title {
             padding: 5px 21px;
-        } 
+        }
     }
     .card-title--main {
         font-size: 2.3rem;
@@ -51,23 +69,21 @@ h4 {
         font-family: 'Source Sans Pro', sans-serif;
         font-weight: 600;
         width: 100%;
-        background-color: rgba(0,0,0,0.4);
+        background-color: rgba(0, 0, 0, 0.4);
     }
     .card-content {
         &.no-p-top {
             padding-top: 5px;
             padding-bottom: 8px;
-
         }
-        .definition{ 
-			padding: 10px;
+        .definition {
+            padding: 10px;
         }
     }
     .card-action {
         &.no-p-top {
             padding-top: 5px;
             padding-bottom: 8px;
-            
         }
         li {
             display: inline-block;
@@ -75,7 +91,7 @@ h4 {
     }
     &:first-child {
         .card-content {
-        padding-top: 21px;
+            padding-top: 21px;
         }
     }
 }
